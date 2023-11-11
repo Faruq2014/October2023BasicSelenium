@@ -1,0 +1,53 @@
+Step--1
+   build a Maven project
+Step--2
+   update properties file in pom.xml
+Step--3 
+  update dependencies
+    a. put dependencies tag
+       <dependencies>
+        
+      </dependencies>
+      
+     a1. https://mvnrepository.com/
+         search Selenium Java--> get the latest version
+           that will be look like this
+             
+              <dependencies>
+				<dependency>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-java</artifactId>
+					<version>4.15.0</version>
+				</dependency>
+							
+    	   </dependencies>
+    	   
+    b. WebDriverManager dependency  (https://mvnrepository.com/)
+    
+      <!-- webdrivermanager -->
+			<dependency>
+			    <groupId>io.github.bonigarcia</groupId>
+			    <artifactId>webdrivermanager</artifactId>
+			    <version>5.6.2</version>
+			</dependency>
+			
+	c. TestNG dependency  (https://mvnrepository.com/)
+	
+	          <dependency>
+				    <groupId>org.testng</groupId>
+				    <artifactId>testng</artifactId>
+				    <version>7.7.0</version>
+				    <scope>test</scope>
+				</dependency>
+ Step--4 
+   Add TestNG plugins
+      a. go to market place
+      b. search TestNG
+      c. install the plug-ins-->accept and trust all --restart eclipse
+				
+Step--4
+  develop/update packages appropriately 
+  update maven update
+  
+         
+   
