@@ -60,7 +60,7 @@ public class FacebookHomePageUrl {
 		
 		@AfterMethod
 		public void closeApplication() {
-			driver.quit();
+			//driver.quit();
 			
 		}
 		
