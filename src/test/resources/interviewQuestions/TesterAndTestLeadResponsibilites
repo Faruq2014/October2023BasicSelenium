@@ -1,0 +1,10 @@
+  Job               Tester                   Test Lead
+ BitBucket repo      no/yes                       yes
+ Base line document  no/yes                        Yes
+ local environment   yes                        help
+ develop source code yes                          yes
+ Bit Bucket config    no                           yes
+ Jenkins config       no                          yes
+ 
+ 
+ 

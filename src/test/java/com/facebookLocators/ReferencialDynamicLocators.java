@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ReferencialLocators {
+public class ReferencialDynamicLocators {
 	
 	WebDriver driver;
 	
@@ -26,14 +26,11 @@ public class ReferencialLocators {
 	
 	@Test
 	public void loginTest() {
-		//using Id
-		//driver.findElement(By.xpath("//input[@id='email']")).sendKeys("jj@jmail.com");
-		//driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("lllkj");
-		
-		//using name
-		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("jj@jmail.com");
-		driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("lllkj");
-		driver.findElement(By.xpath("//button[@name='login']")).click();
+		driver.findElement(By.xpath("//*[starts-with(@id,'em')]")).sendKeys("jj@jmail.com");
+		driver.findElement(By.xpath("//input[starts-with(@name,'pa')]")).clear();
+		driver.findElement(By.xpath("//input[starts-with(@name,'pa')]")).sendKeys("lkjll");
+		driver.findElement(By.xpath("//button[starts-with(@id,'u_0_5_')]")).click();
+		//driver.findElement(By.xpath("//button[@id='u_0_5_gZ']")).click();
 	}
 	
 	@AfterMethod

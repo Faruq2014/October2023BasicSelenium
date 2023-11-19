@@ -23,5 +23,12 @@
 	what is navigate forward
 	what is navigate backward 
 	how do you refresh a page 
+	what is implicitlyWait, could you explain
+	  // you only write once in appropriate place
+	  // it is only work for findElement()
+	  // it will not throw exception before (Duration.ofSeconds(12));
+	  //if it find the match earlier-- it will not waste the time
+	  // industry standard is 12 seconds
+	
 	
 	

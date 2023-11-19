@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ReferencialLocators {
+public class ReferencialTextLocators {
 	
 	WebDriver driver;
 	
@@ -25,15 +25,10 @@ public class ReferencialLocators {
 	}
 	
 	@Test
-	public void loginTest() {
-		//using Id
-		//driver.findElement(By.xpath("//input[@id='email']")).sendKeys("jj@jmail.com");
-		//driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("lllkj");
-		
-		//using name
-		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("jj@jmail.com");
-		driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("lllkj");
-		driver.findElement(By.xpath("//button[@name='login']")).click();
+	public void linkTest() {
+		driver.findElement(By.xpath("//a[text()='Sign Up']")).click();
+		driver.navigate().back();
+		driver.findElement(By.xpath("//a[text()='Messenger']")).click();
 	}
 	
 	@AfterMethod

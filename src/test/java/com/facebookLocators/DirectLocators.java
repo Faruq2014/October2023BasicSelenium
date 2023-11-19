@@ -23,7 +23,7 @@ public class DirectLocators {
 	driver.get("https://www.facebook.com/");
 	//maximize
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
 	
 	}
 	
@@ -38,7 +38,9 @@ public class DirectLocators {
 		//class--compaund locator
 		//driver.findElement(By.className("inputtext _55r1 _6luy _9npi")).sendKeys("iiii");
 	    driver.findElement(By.id("pass")).sendKeys("ghhgjhg");
-	    driver.findElement(By.name("login")).click();
+	    //driver.findElement(By.name("login")).click();
+	    
+	 
 	
 	}
 	 @Test
